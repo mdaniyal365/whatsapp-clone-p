@@ -35,7 +35,7 @@ function App() {
     <div className="app">
      <div className="app__body">
      <Sidebar/>
-     <Sidebar/>
+     
   
      <Chat messages={messages}/>
      </div>
