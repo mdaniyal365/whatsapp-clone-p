@@ -63,6 +63,10 @@ function Chat({messages}) {
           <input value={input} onChange={e=>setInput(e.target.value)} type="text"  placeholder='Type a message' />
           <button onClick={sendMessage} type="submit">send a message</button>
          </form>
+         <form >
+          <input value={input} onChange={e=>setInput(e.target.value)} type="text"  placeholder='Type a message' />
+          <button onClick={sendMessage} type="submit">send a message</button>
+         </form>
          <MicIcon/>
       </div>
     </div>
