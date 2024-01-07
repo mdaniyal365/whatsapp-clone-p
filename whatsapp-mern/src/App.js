@@ -13,6 +13,14 @@ function App() {
       setMessages(response.data);
     })
   },[])
+  function App() {
+  const [messages, setMessages]= useState([])
+  useEffect(()=>{
+    axios.get('/messages/sync')
+    .then((response)=>{
+      setMessages(response.data);
+    })
+  },[])
 
   useEffect(()=>{
     const pusher = new Pusher('34e02ec70d2258515213', {
